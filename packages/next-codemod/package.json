@@ -7,7 +7,7 @@
     "cheerio": "1.0.0",
     "execa": "9.5.2",
     "globby": "14.1.0",
-    "inquirer": "12.4.2",
+    "inquirer": "12.4.3",
     "is-git-clean": "1.1.0",
     "jscodeshift": "17.1.2",
     "meow": "13.2.0"
