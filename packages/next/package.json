@@ -218,7 +218,7 @@
     "https-browserify": "1.0.0",
     "icss-utils": "5.1.0",
     "ignore-loader": "0.1.2",
-    "image-size": "2.0.0",
+    "image-size": "2.0.1",
     "is-docker": "3.0.0",
     "is-wsl": "3.1.0",
     "jest-worker": "29.7.0",
