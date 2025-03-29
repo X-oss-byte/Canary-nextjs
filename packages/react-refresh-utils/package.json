@@ -18,7 +18,7 @@
     "test-pack": "cd ../../ && pnpm test-pack react-refresh-utils"
   },
   "peerDependencies": {
-    "react-refresh": "0.16.0",
+    "react-refresh": "0.17.0",
     "webpack": "^5.94.0 ^5.94.0"
   },
   "peerDependenciesMeta": {
@@ -27,7 +27,7 @@
     }
   },
   "devDependencies": {
-    "react-refresh": "0.16.0",
+    "react-refresh": "0.17.0",
     "webpack": "^5.94.0 ^5.94.0"
   }
 }
