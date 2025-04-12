@@ -208,7 +208,7 @@
     "domain-browser": "5.7.0",
     "edge-runtime": "4.0.1",
     "events": "3.3.0",
-    "find-cache-dir": "5.0.0",
+    "find-cache-dir": "6.0.0",
     "find-up": "7.0.0",
     "fresh": "0.5.2",
     "get-orientation": "1.1.2",
