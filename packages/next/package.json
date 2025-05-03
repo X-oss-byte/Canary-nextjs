@@ -289,7 +289,7 @@
     "webpack": "5.99.7",
     "webpack-sources1": "npm:webpack-sources@3.2.3",
     "webpack-sources3": "npm:webpack-sources@3.2.3",
-    "ws": "8.18.1"
+    "ws": "8.18.2"
   },
   "resolutions": {
     "browserslist": "4.24.5",
