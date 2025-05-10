@@ -3,7 +3,7 @@
   "main": "src/index.js",
   "dependencies": {
     "async-sema": "^3.1.0",
-    "execa": "9.5.2",
+    "execa": "9.5.3",
     "fs-extra": "^11.0.0",
     "get-port": "^7.0.0",
     "glob": "^11.0.0",
