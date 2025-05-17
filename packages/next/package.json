@@ -203,7 +203,7 @@
     "css.escape": "1.5.1",
     "cssnano-simple": "3.0.2",
     "data-uri-to-buffer": "6.0.2",
-    "debug": "4.4.0",
+    "debug": "4.4.1",
     "devalue": "5.1.1",
     "domain-browser": "5.7.0",
     "edge-runtime": "4.0.1",
