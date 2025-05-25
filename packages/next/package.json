@@ -143,7 +143,7 @@
     "@types/babel__traverse": "7.20.7",
     "@types/bytes": "3.1.5",
     "@types/ci-info": "3.1.4",
-    "@types/compression": "1.7.5",
+    "@types/compression": "1.8.0",
     "@types/content-disposition": "0.5.8",
     "@types/content-type": "1.1.8",
     "@types/cookie": "1.0.0",
