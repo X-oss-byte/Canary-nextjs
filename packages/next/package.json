@@ -264,7 +264,7 @@
     "send": "1.2.0",
     "server-only": "0.0.1",
     "setimmediate": "1.0.5",
-    "shell-quote": "1.8.2",
+    "shell-quote": "1.8.3",
     "source-map": "0.7.4",
     "stacktrace-parser": "0.1.11",
     "stream-browserify": "3.0.0",
