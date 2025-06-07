@@ -144,7 +144,7 @@
     "@types/bytes": "3.1.5",
     "@types/ci-info": "3.1.4",
     "@types/compression": "1.8.1",
-    "@types/content-disposition": "0.5.8",
+    "@types/content-disposition": "0.5.9",
     "@types/content-type": "1.1.8",
     "@types/cookie": "1.0.0",
     "@types/cross-spawn": "6.0.6",
