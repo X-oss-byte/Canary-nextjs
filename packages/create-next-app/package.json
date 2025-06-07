@@ -43,7 +43,7 @@
     "chalk": "5.4.1",
     "ci-info": "watson/ci-info#54b034388e65347a87db396f44d5a95c79be0e0e",
     "commander": "14.0.0",
-    "conf": "13.1.0",
+    "conf": "14.0.0",
     "cpy": "11.1.0",
     "cross-spawn": "7.0.6",
     "glob": "11.0.2",
