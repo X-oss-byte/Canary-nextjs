@@ -151,7 +151,7 @@
     "@types/debug": "4.1.12",
     "@types/fresh": "0.5.3",
     "@types/glob": "8.1.0",
-    "@types/jsonwebtoken": "9.0.9",
+    "@types/jsonwebtoken": "9.0.10",
     "@types/lodash": "4.17.17",
     "@types/lodash.curry": "4.1.9",
     "@types/lru-cache": "7.10.10",
