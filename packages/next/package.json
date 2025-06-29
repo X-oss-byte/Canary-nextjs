@@ -287,7 +287,7 @@
     "watchpack": "2.4.4",
     "web-vitals": "5.0.3",
     "webpack": "5.99.9",
-    "webpack-sources1": "npm:webpack-sources@3.3.2",
+    "webpack-sources1": "npm:webpack-sources@3.3.3",
     "webpack-sources3": "npm:webpack-sources@3.3.2",
     "ws": "8.18.2"
   },
