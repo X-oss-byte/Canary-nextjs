@@ -278,7 +278,7 @@
     "text-table": "0.2.0",
     "timers-browserify": "2.0.12",
     "tty-browserify": "0.0.1",
-    "ua-parser-js": "2.0.3",
+    "ua-parser-js": "2.0.4",
     "undici": "7.10.0",
     "unistore": "3.5.2",
     "util": "0.12.5",
