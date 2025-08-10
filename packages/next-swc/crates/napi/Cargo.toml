@@ -24,7 +24,7 @@ rustls-tls = ["next-binding/__turbo_rustls_tls"]
 anyhow = "1.0.82"
 backtrace = "0.3.71"
 fxhash = "0.2.1"
-napi = { version = "2.16.4", default-features = false, features = [
+napi = { version = "3.0.0", default-features = false, features = [
   "napi3",
   "serde-json",
   "tokio_rt",
