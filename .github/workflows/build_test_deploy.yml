@@ -42,7 +42,7 @@ jobs:
         uses: actions/setup-node@v4
         if: ${{ steps.docs-change.outputs.docsChange == 'nope' }}
         with:
-          node-version: 16
+          node-version: 22
           check-latest: true
 
       - uses: actions/checkout@v4
@@ -115,7 +115,7 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 22
           check-latest: true
 
       - run: npm i -g pnpm@${PNPM_VERSION}
@@ -188,7 +188,7 @@ jobs:
         uses: actions/setup-node@v4
         if: ${{needs.build.outputs.docsChange == 'nope'}}
         with:
-          node-version: 16
+          node-version: 22
           check-latest: true
 
       # https://github.com/actions/virtual-environments/issues/1187
@@ -236,7 +236,7 @@ jobs:
         uses: actions/setup-node@v4
         if: ${{needs.build.outputs.docsChange == 'nope'}}
         with:
-          node-version: 16
+          node-version: 22
           check-latest: true
 
       - uses: actions/cache@v4
@@ -626,7 +626,7 @@ jobs:
         uses: actions/setup-node@v4
         if: ${{needs.build.outputs.docsChange == 'nope'}}
         with:
-          node-version: 16
+          node-version: 22
           check-latest: true
 
       - uses: actions/cache@v4
@@ -764,7 +764,7 @@ jobs:
         uses: actions/setup-node@v4
         if: ${{needs.build.outputs.docsChange == 'nope'}}
         with:
-          node-version: 16
+          node-version: 22
           check-latest: true
 
       # https://github.com/actions/virtual-environments/issues/1187
@@ -839,7 +839,7 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 22
           check-latest: true
 
       - uses: actions/cache@v4
@@ -1183,7 +1183,7 @@ jobs:
         uses: actions/setup-node@v4
         if: ${{ !matrix.settings.docker }}
         with:
-          node-version: 16
+          node-version: 22
           check-latest: true
 
       - name: Install
@@ -1254,7 +1254,7 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 22
           check-latest: true
 
       - run: npm i -g turbo@${{ env.TURBO_VERSION }} pnpm@${PNPM_VERSION}
@@ -1346,7 +1346,7 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 22
           check-latest: true
 
       - name: Install Rust
@@ -1394,7 +1394,7 @@ jobs:
         if: ${{needs.build.outputs.docsChange == 'nope'}}
         uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 22
           check-latest: true
 
       - run: npm i -g turbo@${{ env.TURBO_VERSION }} pnpm@${PNPM_VERSION}
@@ -1467,7 +1467,7 @@ jobs:
         uses: actions/setup-node@v4
         if: ${{needs.build.outputs.docsChange == 'nope'}}
         with:
-          node-version: 16
+          node-version: 22
           check-latest: true
 
       - uses: actions/cache@v4
