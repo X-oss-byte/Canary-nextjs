@@ -126,7 +126,7 @@
     "@edge-runtime/primitives": "6.0.0",
     "@hapi/accept": "6.0.3",
     "@napi-rs/cli": "3.1.4",
-    "@napi-rs/triples": "2.0.7",
+    "@napi-rs/triples": "2.0.8",
     "@next/polyfill-module": "15.4.6",
     "@next/polyfill-nomodule": "15.4.6",
     "@next/react-dev-overlay": "14.1.4",
