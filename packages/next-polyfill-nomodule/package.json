@@ -15,7 +15,7 @@
     "test-pack": "cd ../../ && pnpm test-pack next-polyfill-nomodule"
   },
   "devDependencies": {
-    "core-js": "3.45.0",
+    "core-js": "3.45.1",
     "microbundle": "0.15.1",
     "object-assign": "4.1.1",
     "whatwg-fetch": "3.6.20"
