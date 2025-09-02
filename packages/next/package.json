@@ -221,7 +221,7 @@
     "image-size": "2.0.2",
     "is-docker": "3.0.0",
     "is-wsl": "3.1.0",
-    "jest-worker": "30.0.5",
+    "jest-worker": "30.1.0",
     "json5": "2.2.3",
     "jsonwebtoken": "9.0.2",
     "loader-utils2": "npm:loader-utils@3.3.1",
