@@ -162,7 +162,7 @@
     "@types/react": "19.1.12",
     "@types/react-dom": "19.1.9",
     "@types/react-is": "19.0.0",
-    "@types/semver": "7.7.0",
+    "@types/semver": "7.7.1",
     "@types/send": "0.17.5",
     "@types/shell-quote": "1.7.5",
     "@types/tar": "6.1.13",
