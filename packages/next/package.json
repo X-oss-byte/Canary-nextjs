@@ -219,7 +219,7 @@
     "icss-utils": "5.1.0",
     "ignore-loader": "0.1.2",
     "image-size": "2.0.2",
-    "is-docker": "3.0.0",
+    "is-docker": "4.0.0",
     "is-wsl": "3.1.0",
     "jest-worker": "30.1.0",
     "json5": "2.2.3",
