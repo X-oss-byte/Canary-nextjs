@@ -77,7 +77,7 @@
     ]
   },
   "dependencies": {
-    "@next/env": "15.5.3",
+    "@next/env": "15.5.4",
     "@swc/helpers": "0.5.17",
     "caniuse-lite": "^1.0.30001406",
     "postcss": "8.5.6",
@@ -127,10 +127,10 @@
     "@hapi/accept": "6.0.3",
     "@napi-rs/cli": "3.2.0",
     "@napi-rs/triples": "2.1.0",
-    "@next/polyfill-module": "15.5.3",
-    "@next/polyfill-nomodule": "15.5.3",
+    "@next/polyfill-module": "15.5.4",
+    "@next/polyfill-nomodule": "15.5.4",
     "@next/react-dev-overlay": "14.1.4",
-    "@next/react-refresh-utils": "15.5.3",
+    "@next/react-refresh-utils": "15.5.4",
     "@next/swc": "13.1.6",
     "@segment/ajv-human-errors": "2.15.0",
     "@taskr/clear": "1.1.0",
