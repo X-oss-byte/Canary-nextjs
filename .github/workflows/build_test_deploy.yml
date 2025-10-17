@@ -39,7 +39,7 @@ jobs:
       weekNum: ${{ steps.get-week.outputs.WEEK }}
     steps:
       - name: Setup node
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@v6
         if: ${{ steps.docs-change.outputs.docsChange == 'nope' }}
         with:
           node-version: 22
@@ -113,7 +113,7 @@ jobs:
     needs: build
     steps:
       - name: Setup node
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@v6
         with:
           node-version: 22
           check-latest: true
@@ -185,7 +185,7 @@ jobs:
       NEXT_TELEMETRY_DISABLED: 1
     steps:
       - name: Setup node
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@v6
         if: ${{needs.build.outputs.docsChange == 'nope'}}
         with:
           node-version: 22
@@ -233,7 +233,7 @@ jobs:
       NEXT_TELEMETRY_DISABLED: 1
     steps:
       - name: Setup node
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@v6
         if: ${{needs.build.outputs.docsChange == 'nope'}}
         with:
           node-version: 22
@@ -623,7 +623,7 @@ jobs:
       TEST_ELECTRON: 1
     steps:
       - name: Setup node
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@v6
         if: ${{needs.build.outputs.docsChange == 'nope'}}
         with:
           node-version: 22
@@ -761,7 +761,7 @@ jobs:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN_ELEVATED }}
     steps:
       - name: Setup node
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@v6
         if: ${{needs.build.outputs.docsChange == 'nope'}}
         with:
           node-version: 22
@@ -837,7 +837,7 @@ jobs:
     needs: [publishRelease, build-native-test]
     steps:
       - name: Setup node
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@v6
         with:
           node-version: 22
           check-latest: true
@@ -1180,7 +1180,7 @@ jobs:
             next-swc-cargo-cache-${{ matrix.settings.target }}
 
       - name: Setup node
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@v6
         if: ${{ !matrix.settings.docker }}
         with:
           node-version: 22
@@ -1252,7 +1252,7 @@ jobs:
       - uses: actions/checkout@v5
 
       - name: Setup node
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@v6
         with:
           node-version: 22
           check-latest: true
@@ -1344,7 +1344,7 @@ jobs:
       - uses: actions/checkout@v5
 
       - name: Setup node
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@v6
         with:
           node-version: 22
           check-latest: true
@@ -1392,7 +1392,7 @@ jobs:
 
       - name: Setup node
         if: ${{needs.build.outputs.docsChange == 'nope'}}
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@v6
         with:
           node-version: 22
           check-latest: true
@@ -1464,7 +1464,7 @@ jobs:
       NEXT_TELEMETRY_DISABLED: 1
     steps:
       - name: Setup node
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@v6
         if: ${{needs.build.outputs.docsChange == 'nope'}}
         with:
           node-version: 22
