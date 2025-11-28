@@ -197,7 +197,7 @@
     "constants-browserify": "1.0.0",
     "content-disposition": "1.0.1",
     "content-type": "1.0.5",
-    "cookie": "1.1.0",
+    "cookie": "1.1.1",
     "cross-spawn": "7.0.6",
     "crypto-browserify": "3.12.1",
     "css.escape": "1.5.1",
