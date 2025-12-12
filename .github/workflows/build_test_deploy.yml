@@ -72,7 +72,7 @@ jobs:
       - id: get-store-path
         run: echo STORE_PATH=$(pnpm store path) >> $GITHUB_OUTPUT
 
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         timeout-minutes: 2
         id: cache-pnpm-store
         with:
@@ -101,7 +101,7 @@ jobs:
       - id: get-week
         run: echo "WEEK=$(date +%U)" >> $GITHUB_OUTPUT
 
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         timeout-minutes: 2
         id: cache-build
         with:
@@ -120,7 +120,7 @@ jobs:
 
       - run: npm i -g pnpm@${PNPM_VERSION}
 
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         timeout-minutes: 2
         id: restore-build
         with:
@@ -133,7 +133,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         timeout-minutes: 2
         id: restore-build
         if: ${{needs.build.outputs.docsChange == 'nope'}}
@@ -155,7 +155,7 @@ jobs:
           components: rustfmt, clippy
 
       - name: Cache cargo registry
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         timeout-minutes: 2
         if: ${{ steps.swc-change.outputs.SWC_CHANGE == 'yup' }}
         with:
@@ -163,7 +163,7 @@ jobs:
           key: stable-ubuntu-clippy-cargo-registry
 
       - name: Cache cargo index
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         timeout-minutes: 2
         if: ${{ steps.swc-change.outputs.SWC_CHANGE == 'yup' }}
         with:
@@ -202,7 +202,7 @@ jobs:
       - run: mv .git .git-bak
         if: ${{needs.build.outputs.docsChange == 'nope'}}
 
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         timeout-minutes: 2
         if: ${{needs.build.outputs.docsChange == 'nope'}}
         id: restore-build
@@ -239,7 +239,7 @@ jobs:
           node-version: 24
           check-latest: true
 
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         timeout-minutes: 2
         if: ${{needs.build.outputs.docsChange == 'nope'}}
         id: restore-build
@@ -279,7 +279,7 @@ jobs:
       - name: tune linux network
         run: sudo ethtool -K eth0 tx off rx off
 
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         timeout-minutes: 2
         if: ${{needs.build.outputs.docsChange == 'nope'}}
         id: restore-build
@@ -340,7 +340,7 @@ jobs:
       - name: tune linux network
         run: sudo ethtool -K eth0 tx off rx off
 
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         timeout-minutes: 2
         if: ${{needs.build.outputs.docsChange == 'nope'}}
         id: restore-build
@@ -400,7 +400,7 @@ jobs:
       - name: tune linux network
         run: sudo ethtool -K eth0 tx off rx off
 
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         timeout-minutes: 2
         if: ${{needs.build.outputs.docsChange == 'nope'}}
         id: restore-build
@@ -451,7 +451,7 @@ jobs:
       - name: tune linux network
         run: sudo ethtool -K eth0 tx off rx off
 
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         timeout-minutes: 2
         if: ${{needs.build.outputs.docsChange == 'nope'}}
         id: restore-build
@@ -497,7 +497,7 @@ jobs:
       - name: tune linux network
         run: sudo ethtool -K eth0 tx off rx off
 
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         timeout-minutes: 2
         if: ${{ needs.build.outputs.docsChange == 'nope' }}
         id: restore-build
@@ -573,7 +573,7 @@ jobs:
       - name: tune linux network
         run: sudo ethtool -K eth0 tx off rx off
 
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         timeout-minutes: 2
         if: ${{needs.build.outputs.docsChange == 'nope'}}
         id: restore-build
@@ -629,7 +629,7 @@ jobs:
           node-version: 24
           check-latest: true
 
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         timeout-minutes: 2
         if: ${{needs.build.outputs.docsChange == 'nope'}}
         id: restore-build
@@ -677,7 +677,7 @@ jobs:
     env:
       NEXT_TELEMETRY_DISABLED: 1
     steps:
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         timeout-minutes: 2
         if: ${{needs.build.outputs.docsChange == 'nope'}}
         id: restore-build
@@ -706,7 +706,7 @@ jobs:
       - name: tune linux network
         run: sudo ethtool -K eth0 tx off rx off
 
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         timeout-minutes: 2
         if: ${{needs.build.outputs.docsChange == 'nope'}}
         id: restore-build
@@ -731,7 +731,7 @@ jobs:
     env:
       NEXT_TELEMETRY_DISABLED: 1
     steps:
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         timeout-minutes: 2
         if: ${{needs.build.outputs.docsChange == 'nope'}}
         id: restore-build
@@ -771,7 +771,7 @@ jobs:
       - name: tune linux network
         run: sudo ethtool -K eth0 tx off rx off
 
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         timeout-minutes: 2
         id: restore-build
         with:
@@ -802,7 +802,7 @@ jobs:
       VERCEL_TEST_TOKEN: ${{ secrets.VERCEL_TEST_TOKEN }}
       VERCEL_TEST_TEAM: vtest314-next-e2e-tests
     steps:
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         timeout-minutes: 2
         id: restore-build
         with:
@@ -842,7 +842,7 @@ jobs:
           node-version: 24
           check-latest: true
 
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         timeout-minutes: 2
         id: restore-build
         with:
@@ -877,7 +877,7 @@ jobs:
         id: docs-change
 
       - name: Cache cargo registry
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         timeout-minutes: 2
         if: ${{ steps.docs-change.outputs.DOCS_CHANGE == 'nope' }}
         with:
@@ -885,7 +885,7 @@ jobs:
           key: stable-ubuntu-latest-cargo-registry
 
       - name: Cache cargo index
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         timeout-minutes: 2
         if: ${{ steps.docs-change.outputs.DOCS_CHANGE == 'nope' }}
         with:
@@ -898,7 +898,7 @@ jobs:
 
       - name: Turbo Cache
         id: turbo-cache
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         timeout-minutes: 2
         if: ${{ steps.docs-change.outputs.DOCS_CHANGE == 'nope' }}
         with:
@@ -918,7 +918,7 @@ jobs:
       # "If there are multiple partial matches for a restore key, the action returns the most recently created cache."
       # So we get latest cache
       - name: Cache built files
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         timeout-minutes: 5
         with:
           path: ./packages/next-swc/target
@@ -986,7 +986,7 @@ jobs:
     needs: [build, build-native-test, build-wasm-dev]
 
     steps:
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         timeout-minutes: 2
         if: ${{needs.build.outputs.docsChange == 'nope'}}
         id: restore-build
@@ -1171,7 +1171,7 @@ jobs:
       # "If there are multiple partial matches for a restore key, the action returns the most recently created cache."
       # So we get latest cache
       - name: Cache built files
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         timeout-minutes: 5
         with:
           path: ./packages/next-swc/target
@@ -1196,14 +1196,14 @@ jobs:
           target: ${{ matrix.settings.target }}
 
       - name: Cache cargo registry
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         timeout-minutes: 2
         with:
           path: ~/.cargo/registry
           key: ${{ matrix.settings.target }}-cargo-registry
 
       - name: Cache cargo index
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         timeout-minutes: 2
         with:
           path: ~/.cargo/git
@@ -1382,7 +1382,7 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         timeout-minutes: 2
         if: ${{needs.build.outputs.docsChange == 'nope'}}
         id: restore-build
@@ -1410,7 +1410,7 @@ jobs:
 
       - name: Turbo Cache
         id: turbo-cache
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         timeout-minutes: 2
         if: ${{needs.build.outputs.docsChange == 'nope'}}
         with:
@@ -1470,7 +1470,7 @@ jobs:
           node-version: 24
           check-latest: true
 
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         timeout-minutes: 2
         id: restore-build
         if: ${{needs.build.outputs.docsChange == 'nope'}}
