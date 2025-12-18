@@ -176,7 +176,7 @@
     "acorn": "8.15.0",
     "ajv": "8.17.1",
     "amphtml-validator": "1.0.38",
-    "anser": "2.3.3",
+    "anser": "2.3.5",
     "arg": "5.0.2",
     "assert": "2.1.0",
     "async-retry": "1.3.3",
