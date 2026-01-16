@@ -274,7 +274,7 @@
     "strip-ansi": "7.1.2",
     "tar": "7.5.2",
     "taskr": "1.1.0",
-    "terser": "5.44.1",
+    "terser": "5.46.0",
     "text-table": "0.2.0",
     "timers-browserify": "2.0.12",
     "tty-browserify": "0.0.1",
