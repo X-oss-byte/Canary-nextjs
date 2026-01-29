@@ -15,7 +15,7 @@
     "commander": "14.0.2",
     "dotenv": "17.2.3",
     "downsample-lttb": "0.0.1",
-    "listr2": "10.0.0",
+    "listr2": "10.1.0",
     "p-queue": "9.1.0",
     "term-size": "4.0.0",
     "webpack-bundle-analyzer": "^5.0.0",
