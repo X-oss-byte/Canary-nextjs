@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "@babel/types": "7.29.0",
-    "@babel/generator": "7.29.0",
+    "@babel/generator": "7.29.1",
     "random-seed": "0.3.0",
     "cross-env": "^10.0.0",
     "pretty-ms": "^9.0.0",
