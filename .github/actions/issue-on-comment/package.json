@@ -18,5 +18,5 @@
     "@actions/core": "3.0.0",
     "@actions/github": "9.0.0"
   },
-  "packageManager": "npm@11.8.0"
+  "packageManager": "npm@11.9.0"
 }
