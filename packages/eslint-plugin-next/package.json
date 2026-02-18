@@ -12,7 +12,7 @@
     "dist"
   ],
   "dependencies": {
-    "glob": "13.0.3"
+    "glob": "13.0.5"
   },
   "devDependencies": {
     "@types/glob": "9.0.0",
