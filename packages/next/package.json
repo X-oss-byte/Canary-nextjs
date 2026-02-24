@@ -132,7 +132,7 @@
     "@next/react-dev-overlay": "14.1.4",
     "@next/react-refresh-utils": "16.1.6",
     "@next/swc": "13.1.6",
-    "@segment/ajv-human-errors": "2.15.0",
+    "@segment/ajv-human-errors": "2.16.0",
     "@taskr/clear": "1.1.0",
     "@taskr/esnext": "1.1.0",
     "@types/amphtml-validator": "1.0.4",
