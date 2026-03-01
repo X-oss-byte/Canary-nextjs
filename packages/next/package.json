@@ -271,7 +271,7 @@
     "stream-http": "3.2.0",
     "string-hash": "1.1.3",
     "string_decoder": "1.3.0",
-    "strip-ansi": "7.1.2",
+    "strip-ansi": "7.2.0",
     "tar": "7.5.9",
     "taskr": "1.1.0",
     "terser": "5.46.0",
