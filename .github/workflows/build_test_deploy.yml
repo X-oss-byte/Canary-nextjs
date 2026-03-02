@@ -247,7 +247,7 @@ jobs:
           path: ./*
           key: ${{ github.sha }}-${{ github.run_number }}
 
-      - uses: actions/download-artifact@v7
+      - uses: actions/download-artifact@v8
         if: ${{needs.build.outputs.docsChange == 'nope'}}
         with:
           name: next-swc-test-binary
@@ -287,7 +287,7 @@ jobs:
           path: ./*
           key: ${{ github.sha }}-${{ github.run_number }}
 
-      - uses: actions/download-artifact@v7
+      - uses: actions/download-artifact@v8
         if: ${{needs.build.outputs.docsChange == 'nope'}}
         with:
           name: next-swc-test-binary
@@ -312,7 +312,7 @@ jobs:
 
       - name: Upload test trace
         if: always()
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: test-trace
           if-no-files-found: ignore
@@ -348,7 +348,7 @@ jobs:
           path: ./*
           key: ${{ github.sha }}-${{ github.run_number }}
 
-      - uses: actions/download-artifact@v7
+      - uses: actions/download-artifact@v8
         if: ${{needs.build.outputs.docsChange == 'nope'}}
         with:
           name: next-swc-test-binary
@@ -372,7 +372,7 @@ jobs:
 
       - name: Upload test trace
         if: always()
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: test-trace
           if-no-files-found: ignore
@@ -408,7 +408,7 @@ jobs:
           path: ./*
           key: ${{ github.sha }}-${{ github.run_number }}
 
-      - uses: actions/download-artifact@v7
+      - uses: actions/download-artifact@v8
         if: ${{needs.build.outputs.docsChange == 'nope'}}
         with:
           name: next-swc-test-binary
@@ -459,7 +459,7 @@ jobs:
           path: ./*
           key: ${{ github.sha }}-${{ github.run_number }}
 
-      - uses: actions/download-artifact@v7
+      - uses: actions/download-artifact@v8
         if: ${{needs.build.outputs.docsChange == 'nope'}}
         with:
           name: next-swc-test-binary
@@ -505,7 +505,7 @@ jobs:
           path: ./*
           key: ${{ github.sha }}-${{ github.run_number }}
 
-      - uses: actions/download-artifact@v7
+      - uses: actions/download-artifact@v8
         if: ${{ needs.build.outputs.docsChange == 'nope' }}
         with:
           name: next-swc-test-binary
@@ -519,7 +519,7 @@ jobs:
 
       - name: Upload test trace
         if: always()
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: test-trace
           if-no-files-found: ignore
@@ -581,7 +581,7 @@ jobs:
           path: ./*
           key: ${{ github.sha }}-${{ github.run_number }}
 
-      - uses: actions/download-artifact@v7
+      - uses: actions/download-artifact@v8
         if: ${{needs.build.outputs.docsChange == 'nope'}}
         with:
           name: next-swc-test-binary
@@ -605,7 +605,7 @@ jobs:
 
       - name: Upload test trace
         if: always()
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: test-trace
           if-no-files-found: ignore
@@ -637,7 +637,7 @@ jobs:
           path: ./*
           key: ${{ github.sha }}-${{ github.run_number }}
 
-      - uses: actions/download-artifact@v7
+      - uses: actions/download-artifact@v8
         if: ${{needs.build.outputs.docsChange == 'nope'}}
         with:
           name: next-swc-test-binary
@@ -685,7 +685,7 @@ jobs:
           path: ./*
           key: ${{ github.sha }}-${{ github.run_number }}
 
-      - uses: actions/download-artifact@v7
+      - uses: actions/download-artifact@v8
         if: ${{needs.build.outputs.docsChange == 'nope'}}
         with:
           name: next-swc-test-binary
@@ -714,7 +714,7 @@ jobs:
           path: ./*
           key: ${{ github.sha }}-${{ github.run_number }}
 
-      - uses: actions/download-artifact@v7
+      - uses: actions/download-artifact@v8
         if: ${{needs.build.outputs.docsChange == 'nope'}}
         with:
           name: next-swc-test-binary
@@ -739,7 +739,7 @@ jobs:
           path: ./*
           key: ${{ github.sha }}-${{ github.run_number }}
 
-      - uses: actions/download-artifact@v7
+      - uses: actions/download-artifact@v8
         if: ${{needs.build.outputs.docsChange == 'nope'}}
         with:
           name: next-swc-test-binary
@@ -778,12 +778,12 @@ jobs:
           path: ./*
           key: ${{ github.sha }}-${{ github.run_number }}
 
-      - uses: actions/download-artifact@v7
+      - uses: actions/download-artifact@v8
         with:
           name: next-swc-binaries
           path: packages/next-swc/native
 
-      - uses: actions/download-artifact@v7
+      - uses: actions/download-artifact@v8
         with:
           name: wasm-binaries
           path: packages/next-swc/crates/wasm
@@ -809,7 +809,7 @@ jobs:
           path: ./*
           key: ${{ github.sha }}-${{ github.run_number }}
 
-      - uses: actions/download-artifact@v7
+      - uses: actions/download-artifact@v8
         if: ${{needs.build.outputs.docsChange == 'nope'}}
         with:
           name: next-swc-test-binary
@@ -823,7 +823,7 @@ jobs:
 
       - name: Upload test trace
         if: always()
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: test-trace
           if-no-files-found: ignore
@@ -849,7 +849,7 @@ jobs:
           path: ./*
           key: ${{ github.sha }}-${{ github.run_number }}
 
-      - uses: actions/download-artifact@v7
+      - uses: actions/download-artifact@v8
         with:
           name: next-swc-test-binary
           path: packages/next-swc/native
@@ -943,7 +943,7 @@ jobs:
             strip packages/next-swc/native/next-swc.*.node
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         if: ${{ steps.docs-change.outputs.DOCS_CHANGE == 'nope' }}
         with:
           name: next-swc-test-binary
@@ -994,7 +994,7 @@ jobs:
           path: ./*
           key: ${{ github.sha }}
 
-      - uses: actions/download-artifact@v7
+      - uses: actions/download-artifact@v8
         if: ${{needs.build.outputs.docsChange == 'nope'}}
         with:
           name: wasm-dev-binary
@@ -1003,7 +1003,7 @@ jobs:
       - run: ls packages/next-swc/crates/wasm
         if: ${{needs.build.outputs.docsChange == 'nope'}}
 
-      - uses: actions/download-artifact@v7
+      - uses: actions/download-artifact@v8
         if: ${{needs.build.outputs.docsChange == 'nope'}}
         with:
           name: next-swc-test-binary
@@ -1232,7 +1232,7 @@ jobs:
 
       - name: Upload artifact
         if: ${{ needs.build.outputs.isRelease == 'true' }}
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: next-swc-binaries
           path: packages/next-swc/native/next-swc.*.node
@@ -1323,7 +1323,7 @@ jobs:
 
       - name: Upload artifact
         if: ${{ needs.build.outputs.isRelease == 'true' }}
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: next-swc-binaries
           path: packages/next-swc/native/next-swc.*.node
@@ -1373,7 +1373,7 @@ jobs:
 
       - name: Upload artifact
         if: ${{ needs.build.outputs.isRelease == 'true' }}
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: wasm-binaries
           path: packages/next-swc/crates/wasm/pkg-*
@@ -1439,7 +1439,7 @@ jobs:
 
       - name: Upload artifact
         if: ${{needs.build.outputs.docsChange == 'nope'}}
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: wasm-dev-binary
           path: packages/next-swc/crates/wasm/pkg-nodejs
@@ -1486,7 +1486,7 @@ jobs:
         if: ${{needs.build.outputs.docsChange == 'nope'}}
         run: echo ${GIT_SHORT_SHA}
 
-      - uses: actions/download-artifact@v7
+      - uses: actions/download-artifact@v8
         if: ${{needs.build.outputs.docsChange == 'nope'}}
         with:
           name: next-swc-test-binary
