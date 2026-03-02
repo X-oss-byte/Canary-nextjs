@@ -89,7 +89,7 @@ jobs:
             strip packages/next-swc/native/next-swc.*.node
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: next-swc-dev-binary
           path: packages/next-swc/native/next-swc.linux-x64-gnu.node
@@ -113,7 +113,7 @@ jobs:
         run: echo "DOCS_CHANGE<<EOF" >> $GITHUB_OUTPUT; echo "$(node scripts/run-for-change.js --not --type docs --exec echo 'nope')" >> $GITHUB_OUTPUT; echo 'EOF' >> $GITHUB_OUTPUT
         id: docs-change
 
-      - uses: actions/download-artifact@v7
+      - uses: actions/download-artifact@v8
         if: ${{ steps.docs-change.outputs.DOCS_CHANGE == 'nope' }}
         with:
           name: next-swc-dev-binary
