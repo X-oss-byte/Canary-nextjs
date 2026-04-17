@@ -125,7 +125,7 @@
     "@babel/types": "7.29.0",
     "@edge-runtime/primitives": "6.0.0",
     "@hapi/accept": "6.0.3",
-    "@napi-rs/cli": "3.5.1",
+    "@napi-rs/cli": "3.6.2",
     "@napi-rs/triples": "2.1.9",
     "@next/polyfill-module": "16.1.6",
     "@next/polyfill-nomodule": "16.1.6",
