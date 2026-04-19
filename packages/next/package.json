@@ -202,7 +202,7 @@
     "crypto-browserify": "3.12.1",
     "css.escape": "1.5.1",
     "cssnano-simple": "3.0.2",
-    "data-uri-to-buffer": "6.0.2",
+    "data-uri-to-buffer": "8.0.0",
     "debug": "4.4.3",
     "devalue": "5.7.1",
     "domain-browser": "5.7.0",
