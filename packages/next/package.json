@@ -282,7 +282,7 @@
     "undici": "8.1.0",
     "unistore": "3.5.2",
     "util": "0.12.5",
-    "uuid": "13.0.0",
+    "uuid": "14.0.0",
     "vm-browserify": "1.1.2",
     "watchpack": "2.5.1",
     "web-vitals": "5.2.0",
