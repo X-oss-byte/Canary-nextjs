@@ -230,7 +230,7 @@
     "lru-cache": "11.3.5",
     "micromatch": "4.0.8",
     "mini-css-extract-plugin": "2.10.2",
-    "nanoid": "5.1.9",
+    "nanoid": "5.1.11",
     "native-url": "0.3.4",
     "neo-async": "2.6.2",
     "node-fetch": "3.3.2",
