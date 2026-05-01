@@ -174,7 +174,7 @@
     "@vercel/ncc": "0.38.4",
     "@vercel/nft": "1.5.0",
     "acorn": "8.16.0",
-    "ajv": "8.18.0",
+    "ajv": "8.20.0",
     "amphtml-validator": "1.0.38",
     "anser": "2.3.5",
     "arg": "5.0.2",
