@@ -279,7 +279,7 @@
     "timers-browserify": "2.0.12",
     "tty-browserify": "0.0.1",
     "ua-parser-js": "2.0.9",
-    "undici": "8.1.0",
+    "undici": "8.2.0",
     "unistore": "3.5.2",
     "util": "0.12.5",
     "uuid": "14.0.0",
