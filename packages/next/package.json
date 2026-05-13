@@ -246,7 +246,7 @@
     "postcss-modules-local-by-default": "4.2.0",
     "postcss-modules-scope": "3.2.1",
     "postcss-modules-values": "4.0.0",
-    "postcss-preset-env": "11.2.1",
+    "postcss-preset-env": "11.3.0",
     "postcss-safe-parser": "7.0.1",
     "postcss-scss": "4.0.9",
     "postcss-value-parser": "4.2.0",
