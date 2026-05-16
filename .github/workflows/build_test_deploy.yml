@@ -1241,7 +1241,7 @@ jobs:
     if: ${{ needs.build.outputs.isRelease == 'true' || (needs.build.outputs.turboToken != 'empty') }}
     needs: build
     name: stable - x86_64-unknown-freebsd - node@16
-    runs-on: macos-15
+    runs-on: macos-26
     env:
       TURBO_TEAM: 'vercel'
       TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
