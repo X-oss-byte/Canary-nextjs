@@ -265,7 +265,7 @@
     "server-only": "0.0.1",
     "setimmediate": "1.0.5",
     "shell-quote": "1.8.4",
-    "source-map": "0.7.6",
+    "source-map": "0.8.0",
     "stacktrace-parser": "0.1.11",
     "stream-browserify": "3.0.0",
     "stream-http": "3.2.0",

@@ -15,6 +15,6 @@
     "@mdx-js/react": "*"
   },
   "dependencies": {
-    "source-map": "^0.7.0"
+    "source-map": "^0.8.0"
   }
 }
