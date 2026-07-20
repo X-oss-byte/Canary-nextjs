@@ -284,7 +284,7 @@
     "util": "0.12.5",
     "uuid": "14.0.1",
     "vm-browserify": "1.1.2",
-    "watchpack": "2.5.1",
+    "watchpack": "2.5.2",
     "web-vitals": "5.2.0",
     "webpack": "5.106.2",
     "webpack-sources1": "npm:webpack-sources@3.4.1",
