@@ -286,7 +286,7 @@
     "vm-browserify": "1.1.2",
     "watchpack": "2.5.2",
     "web-vitals": "5.3.0",
-    "webpack": "5.109.0",
+    "webpack": "5.109.2",
     "webpack-sources1": "npm:webpack-sources@3.5.1",
     "webpack-sources3": "npm:webpack-sources@3.4.1",
     "ws": "8.20.1"
