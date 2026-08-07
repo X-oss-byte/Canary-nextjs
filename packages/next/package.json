@@ -293,7 +293,7 @@
   },
   "resolutions": {
     "browserslist": "4.28.7",
-    "caniuse-lite": "1.0.30001806"
+    "caniuse-lite": "1.0.30001807"
   },
   "engines": {
     "node": ">=14.6.0"
