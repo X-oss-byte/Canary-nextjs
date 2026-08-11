@@ -28,7 +28,7 @@ jobs:
         id: docs-change
 
       - name: Cache cargo registry
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         timeout-minutes: 2
         if: ${{ steps.docs-change.outputs.DOCS_CHANGE == 'nope' }}
         with:
@@ -36,7 +36,7 @@ jobs:
           key: stable-ubuntu-latest-node@14-cargo-registry-trimmed-${{ hashFiles('**/Cargo.lock') }}
 
       - name: Cache cargo index
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         timeout-minutes: 2
         if: ${{ steps.docs-change.outputs.DOCS_CHANGE == 'nope' }}
         with:
@@ -49,7 +49,7 @@ jobs:
 
       - name: Turbo Cache
         id: turbo-cache
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         timeout-minutes: 2
         if: ${{ steps.docs-change.outputs.DOCS_CHANGE == 'nope' }}
         with:
@@ -64,7 +64,7 @@ jobs:
       # "If there are multiple partial matches for a restore key, the action returns the most recently created cache."
       # So we get latest cache
       - name: Cache built files
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         timeout-minutes: 2
         with:
           path: ./packages/next-target
