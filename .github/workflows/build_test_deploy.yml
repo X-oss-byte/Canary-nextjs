@@ -218,7 +218,7 @@ jobs:
       - run: ./scripts/check-pre-compiled.sh
         if: ${{needs.build.outputs.docsChange == 'nope'}}
 
-      - uses: EndBug/add-and-commit@v10
+      - uses: EndBug/add-and-commit@v11
         if: ${{ failure() }}
         with:
           add: 'packages/next/compiled packages/next/bundles --force'
