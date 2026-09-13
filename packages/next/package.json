@@ -192,7 +192,7 @@
     "cli-select": "1.1.2",
     "client-only": "0.0.1",
     "comment-json": "5.0.0",
-    "compression": "1.8.1",
+    "compression": "1.8.2",
     "conf": "15.1.0",
     "constants-browserify": "1.0.0",
     "content-disposition": "3.0.0",
