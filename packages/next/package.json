@@ -288,7 +288,7 @@
     "web-vitals": "6.2.2",
     "webpack": "5.111.1",
     "webpack-sources1": "npm:webpack-sources@3.6.0",
-    "webpack-sources3": "npm:webpack-sources@3.5.1",
+    "webpack-sources3": "npm:webpack-sources@3.6.0",
     "ws": "8.21.3"
   },
   "resolutions": {
