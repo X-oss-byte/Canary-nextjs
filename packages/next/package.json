@@ -80,7 +80,7 @@
     "@next/env": "16.3.8",
     "@swc/helpers": "0.5.23",
     "caniuse-lite": "^1.0.30001406",
-    "postcss": "8.5.28",
+    "postcss": "8.5.29",
     "styled-jsx": "5.1.7"
   },
   "peerDependencies": {
